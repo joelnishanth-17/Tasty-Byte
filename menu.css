@@ -1,0 +1,108 @@
+*{
+    font-family: cursive;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #FFD700; /* Gold color */
+    color: #000; /* Black text */
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Decreased padding */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.header-left {
+    flex: 1; /* Take up remaining space */
+}
+
+.header-right {
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+}
+
+.header-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-right ul li {
+    margin: 0 10px;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.header-right ul li a:hover {
+    color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 50px; /* Increased font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Added bold font weight */
+    margin-bottom: 20px;
+}
+
+.menu h3 {
+    font-size: 36px; /* Section heading font size */
+    margin-top: 40px; /* Space above each section */
+    margin-bottom: 20px; /* Space below each section heading */
+    color: #333;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h4 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 18px;
+    margin: 5px 0;
+}

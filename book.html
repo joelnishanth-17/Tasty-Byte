@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - TASTY BYTE</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <h1>TASTY BYTE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="bestseller.html">BESTSELLER</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contactus.html">FEEDBACK</a></li>
+                <li><a href="book.html">BOOK A TABLE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="description">
+        <div class="description-container">
+            <h2 style="font-family: cursive;" class="description-title">Online Reservation</h2>
+            <div class="reservation-content">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="persons">Number of Persons:</label>
+                        <input type="number" id="persons" name="persons" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="SUBMIT">Book a Table</button>
+                </form>
+            </div>
+            <div class="RESERVATION-INFO">
+                <h3>TIMINGS</h3>
+                <p><strong>LUNCH:</strong> 12:00 PM - 3:00 PM</p>
+                <p><strong>DINNER:</strong> 7:00 PM - 11:00 PM</p>
+                <h3>LOCATION</h3>
+                <p>8-191/15, Opposite Bio Diversity Park,Raidurgam, Gachibowli Road, Madhura Nagar Colony, Gachibowli Hyderabad</p>
+                <h3>CONTACT</h3>
+                <p id="phone-num">Phone: +91 93456 75890</p>
+        <p>&copy; 2024 TASTY BYTE. All rights reserved.</p>
+
+	 
+            </div>
+        </div>
+    </div>
+
+  
+
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

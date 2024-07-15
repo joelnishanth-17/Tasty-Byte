@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Our Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Additional styles specific to this page */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://source.unsplash.com/random'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #FFD700; /* Gold color */
+            color: #000; /* Black text */
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #e5c100; /* Darker gold color */
+        }
+
+        .submitted-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+            text-align: center;
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TASTY BYTE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="bestseller.html">BESTSELLER</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contactus.html">FEEDBACK</a></li>
+                <li><a href="book.html">BOOK A TABLE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">FEEDBACK</h2>
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="submitted-message" id="submitted-message">
+                    Thank you! Your feedback has been submitted.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            document.getElementById('submitted-message').style.display = 'block'; // Show the submitted message
+            this.reset(); // Reset the form fields
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Bestsellers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #FFD700;
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-right ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .header-right ul li {
+            margin: 0 10px;
+        }
+
+        .header-right ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .header-right ul li a:hover {
+            color: #555;
+        }
+
+        .best-sellers {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .best-sellers h2 {
+            margin-bottom: 10px;
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .slider {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .slide {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            flex: 0 0 calc(50% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 65px;
+            
+        }
+
+     
+
+        .slide:hover{
+            transform: scale(1.05);
+            transition: ease all .4s;
+            
+        }
+        .slide h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .slide p {
+            font-family:cursive;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            font-size: 20px;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .slider {
+                width: 100%;
+            }
+
+            .slide {
+                flex: 0 0 calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>TASTY BYTE</h1>
+        </div>
+        <div class="header-right">
+            <ul>
+                 <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="bestseller.html">BESTSELLER</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contactus.html">FEEDBACK</a></li>
+                <li><a href="book.html">BOOK A TABLE</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="best-sellers">
+        <h2>Our Best Sellers</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/LyjfijpnrV1P-2REE7MnzqS5t4rJwFJvWucO750Dung/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/bG9zZS11cC1hcHBl/dGl6aW5nLXJhbWFk/YW4tbWVhbF8yMy0y/MTUxMTgyNTQwLmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="CHICKEN BIRIYANI">
+                <h2>CHICKEN BIRIYANI</h2>
+                <p>"Indulge in our Chicken Biryani: tender, aromatic, and packed with spices that dance on your taste buds, delivering a savory delight in every mouthful."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/jS9bO5nVP9SSUrUeeJZwOupFPjoVWnqfY0JC4pYqu4I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzcwLzU4Lzcy/LzM2MF9GXzU3MDU4/NzIzM19Rbkdkd0Mz/WENwRFFsYkprOWFr/QnR5ZTZCTjBZOTda/QS5qcGc">
+                <h2>MUTTON BIRIYANI</h2>
+                <p>"Savor our Mutton Biryani, where succulent morsels of meat blend with fragrant rice and exotic spices, creating a symphony of flavors fit for royalty."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/D3Otwd06RyIKTObRSwIGFSP7Fc9fZBOOL1zOSXUUjqg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2Lzc2LzU5LzIw/LzM2MF9GXzY3NjU5/MjAxM19OSGJGRDZW/V0xrTEozY0dhd3VG/OE04M2hwN3JvN2t2/NC5qcGc">
+                <h2>BUTTER CHICKEN</h2>
+                <p>"Experience the creamy richness of Butter Chicken, where tender chicken is bathed in a velvety tomato sauce infused with butter, cream, and a hint of smoky tandoor."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/nZOcFDi1b8u0EfcuU1CWfK5viqzok7BBXp-0_Xrne1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0Lzk3LzU1LzQz/LzM2MF9GXzQ5NzU1/NDM4N19VUTZYbW9t/VkdFQ1o1Ym05NkVY/WG1QZTZnVkgxR3Nt/NS5qcGc">
+                <h2>CHICKEN TIKKA</h2>
+                <p>"Delight in our Chicken Tikka, where marinated chicken is grilled to perfection, offering a tantalizing burst of spices and a charred aroma that captivates the senses."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/Mx_GKdY0Gy1ML5VUi-bYburtE5pgQJv4T85-RQmkE3M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by90YW5kb29yaS1j/aGlja2VuLXdpdGgt/Z2FybmlzaC1mcmVz/aGx5LWNob3BwZWQt/Y2lsXzExNzc5NjUt/MTExODIuanBnP3Np/emU9NjI2JmV4dD1q/cGc">
+                <h2>TANDOORI CHICKEN</h2>
+                <p>"Indulge in Tandoori Chicken, a culinary marvel where marinated chicken is roasted in a traditional clay oven, resulting in smoky flavors and tender, juicy bites."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/T1iQkWSKeWez4oVxf7yQJWjxnRJDDrfXo_qJXMnMaS8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zdHlsaXNoLXNo/YWhpLXBhbmVlci1z/ZXJ2aW5nXzExNzkx/MzAtOTE3MDMuanBn/P3NpemU9NjI2JmV4/dD1qcGc">
+                <h2>PANEER BUTTER MASALA</h2>
+                <p>"Enjoy Paneer Butter Masala, a vegetarian delight featuring soft paneer cubes in a luscious tomato-based gravy, enriched with butter and aromatic spices."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/hBzXyAveX3DgMUG-kKDWsPNSaMjTJUR8ERTFHcblhJg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wYW5lZXItcGFu/ZWVyLWlzLXBvcHVs/YXItZGlzaC1pbmRp/YV83ODcyNzMtMzM5/NC5qcGc_c2l6ZT02/MjYmZXh0PWpwZw">
+                <h2>PALAK PANNER</h2>
+                <p>"Treat yourself to Palak Paneer, where creamy spinach puree embraces soft paneer, creating a harmonious blend of earthy greens and mild spices."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/Z0ZZkxbZHUGhaUD7lfPJvSVCH0SdCvlM7C5SlguDr7Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMz/NzIxMzMwOS9waG90/by9ndWxhYi1qYW11/bi5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9TnpESDlPbTIz/aFp5RnNXNkt0NVo1/VUsyT19WUTdhaG80/SDB4b0hBRzg2TT0">
+                <h2>GULAB JAMUN</h2>
+                <p>"Dive into Gulab Jamun, soft milk solids soaked in delicately flavored sugar syrup, offering a heavenly sweetness that melts in your mouth with every bite."</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/Vpz1iyr1CrppknQCjBAmk6utLLMVAIxF_F2uUSTuDKA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2Lzk3LzEyLzcw/LzM2MF9GXzY5NzEy/NzA1NV81RExiQlJt/OWxVc3ZnMnVicUJK/SmNsQkdPNkF4UHJw/dS5qcGc">
+                <h2>GOBI MANCHURIAN</h2>
+                <p>"Try our Gobi Manchurian, where crispy cauliflower florets are tossed in a tangy, spicy sauce, delivering a perfect balance of crunchy texture and zesty flavors."
+</p>
+            </div>
+            <div class="slide">
+                <img src="https://imgs.search.brave.com/ufs0XtanMhPyWn37MVIXy3guyvwlODMY2gA-w7Ei8pk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9waWN0dXJlLW1h/c2FsYS1kb3NhXzE5/ODA2Ny00OTYzOTcu/anBnP3NpemU9NjI2/JmV4dD1qcGc">
+                <h2>MASALA DOSA</h2>
+                <p>"Savor the iconic Masala Dosa, a South Indian classic featuring a crisp crepe filled with spiced potatoes, served with coconut chutney and tangy sambar."</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Main content area, can be further filled as per your design -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 2, /* Show two slides at a time */
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
